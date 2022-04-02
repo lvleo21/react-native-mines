@@ -22,8 +22,5 @@ que está executando o app.
 
 
 
-<h2 align="center"> 
-    🚧
-    <br/>	
-    Em construção...  
-</h2>
+<br/>
+<h1 align="center">Em construção... 🚧</h1>
