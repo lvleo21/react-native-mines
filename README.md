@@ -6,15 +6,14 @@ Este é mais um projeto do curso de [React Native da Cod3r](https://www.udemy.co
 
 ## ↪️ Telas do aplicativo
 
-<figure align="center">
+<p align="center">
 <img
 alt="screenOfCalculator"
 title="#Calculator"
 width=300
 src="https://i.imgur.com/zwl3uky.jpg"
 />
-<figcaption>Estados que o campo pode assumir.</figcaption>
-</figure>
+</p>
 
 ## ↪️ Funcionalidades
 
