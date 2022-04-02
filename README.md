@@ -8,10 +8,10 @@ Este é mais um projeto do curso de [React Native da Cod3r](https://www.udemy.co
 
 <p align="center">
 <img
-alt="screenOfCalculator"
-title="#Calculator"
+alt="Tela dos possíveis estados que uma mina pode assumir"
+title="#CampoMinado"
 width=300
-src="https://i.imgur.com/zwl3uky.jpg"
+src="https://i.imgur.com/ZhWlvFZ.png"
 />
 </p>
 
