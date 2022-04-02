@@ -1,12 +1,12 @@
 <h1 align="center">Campo Minado 💣</h1>
 
-
 ## ↪️ Introdução
+
 Este é mais um projeto do curso de [React Native da Cod3r](https://www.udemy.com/course/curso-react-native/). Neste módulo, o desafio era desenvolver um campo minado similar ao que encontramos no sistema operacional Windows.
 
 ## ↪️ Telas do aplicativo
-<p align="center">
-<figure>
+
+<figure align="center">
 <img
 alt="screenOfCalculator"
 title="#Calculator"
@@ -15,7 +15,6 @@ src="https://i.imgur.com/zwl3uky.jpg"
 />
 <figcaption>Estados que o campo pode assumir.</figcaption>
 </figure>
-</p>
 
 ## ↪️ Funcionalidades
 
