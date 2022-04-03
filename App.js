@@ -1,9 +1,25 @@
+import { useState } from "react";
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Field from './src/components/Field';
 import params from './src/utils/params';
+import MineField from './src/components/MineField';
+import { createMinedBoard } from "./src/utils/functions"
 
 export default function App() {
+
+  const minesAmount = () => {
+    const cols = params.getColumnsAmount();
+    const rows = params.getRowsAmount();
+    return Math.ceil(cols * rows * params.difficultLevel)
+  }
+
+
+  const [board, setBoard] = useState(createMinedBoard(
+    params.getColumnsAmount(),
+    params.getRowsAmount(),
+    minesAmount()
+  ))
+
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Iniciando o Mines!</Text>
@@ -11,17 +27,9 @@ export default function App() {
         Tamanho da grade: {params.getRowsAmount()} x {params.getColumnsAmount()}
       </Text>
 
-      <Field/>
-      <Field opened/>
-      <Field opened nearMines={1}/>
-      <Field opened nearMines={2}/>
-      <Field opened nearMines={3}/>
-      <Field opened nearMines={6}/>
-      <Field mined/>
-      <Field mined opened/>
-      <Field mined opened exploded/>
-      <Field flagged/>
-      <Field flagged opened/>
+      <View style={styles.board}>
+        <MineField board={board}/>
+      </View>
 
       <StatusBar hidden={true} />
     </View>
@@ -31,13 +39,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
   welcome: {
     fontSize: 20,
     textAlign: "center",
     margin: 10
+  },
+  board: {
+    alignItems: "center",
+    backgroundColor: "#AAA"
   }
 });
